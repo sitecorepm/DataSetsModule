@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2888F82E-9950-48CB-A453-E32156C78327}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Sitecore.SharedSource.Dataset</RootNamespace>
+    <AssemblyName>Sitecore.SharedSource.Dataset</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Sitecore.Kernel">
+      <HintPath>..\3rdParty\Sitecore.Kernel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Caching\CacheContainer.cs" />
+    <Compile Include="Caching\CacheFailure.cs" />
+    <Compile Include="Caching\CacheFailureException.cs" />
+    <Compile Include="Caching\CacheRefreshThread.cs" />
+    <Compile Include="Caching\DatasetCache.cs" />
+    <Compile Include="ContentEditorFieldTypes\DatasetRendererTemplate.cs" />
+    <Compile Include="DataAccess\SqlServerDatabase.cs" />
+    <Compile Include="Domain\CompiledView.cs" />
+    <Compile Include="DatasetViewEngine.cs" />
+    <Compile Include="Delegates.cs" />
+    <Compile Include="Domain\FieldDeclaration.cs" />
+    <Compile Include="Extensions\IEnumerableExtensions.cs" />
+    <Compile Include="Extensions\ItemExtensions.cs" />
+    <Compile Include="Extensions\ItemsExtensions.cs" />
+    <Compile Include="Extensions\PageExtensions.cs" />
+    <Compile Include="Extensions\StringExtensions.cs" />
+    <Compile Include="Extensions\TemplateItemExtensions.cs" />
+    <Compile Include="Extensions\XmlExtensions.cs" />
+    <Compile Include="Fields\DatasetRendererTemplateField.cs" />
+    <Compile Include="Items\base\BaseDataset.cs" />
+    <Compile Include="Items\base\ItemDataset.cs" />
+    <Compile Include="Items\ContextItemQueryItem.cs" />
+    <Compile Include="Items\DatabaseArgumentsQueryItem.cs" />
+    <Compile Include="Items\DatabaseQueryItem.cs" />
+    <Compile Include="Items\DatasetRendererItem.cs" />
+    <Compile Include="Items\DatasetRendererPagerItem.cs" />
+    <Compile Include="Items\factory\DatasetFactory.cs" />
+    <Compile Include="Items\interface\IDatasetItem.cs" />
+    <Compile Include="Items\ItemsQueryItem.cs" />
+    <Compile Include="Items\ItemsSubset.cs" />
+    <Compile Include="Items\SharepointQueryItem.cs" />
+    <Compile Include="Items\StaticItemSetItem.cs" />
+    <Compile Include="Items\XmlFeedItem.cs" />
+    <Compile Include="Pipelines\GetSharepointCredentials\DefaultProcessor.cs" />
+    <Compile Include="Pipelines\GetSharepointCredentials\GetSharepointCredentialsArgs.cs" />
+    <Compile Include="Pipelines\IPipelineProcessor.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sharepoint\SharepointField.cs" />
+    <Compile Include="Sharepoint\SharepointService.cs" />
+    <Compile Include="Utility\ConvertUtil.cs" />
+    <Compile Include="Utility\FieldIDs.cs" />
+    <Compile Include="Utility\KeyLockManager.cs" />
+    <Compile Include="Utility\RegexUtil.cs" />
+    <Compile Include="Utility\WebServiceUtil.cs" />
+    <Compile Include="Utility\WildcardUtil.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Sitecore.SharedSource.Text\Sitecore.SharedSource.Text.csproj">
+      <Project>{0B8E634E-4499-4D1B-A7B3-BE8BAF762242}</Project>
+      <Name>Sitecore.SharedSource.Text</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

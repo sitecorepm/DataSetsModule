@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.SharedSource.Dataset", "Sitecore.SharedSource.Dataset\Sitecore.SharedSource.Dataset.csproj", "{2888F82E-9950-48CB-A453-E32156C78327}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.SharedSource.Text", "Sitecore.SharedSource.Text\Sitecore.SharedSource.Text.csproj", "{0B8E634E-4499-4D1B-A7B3-BE8BAF762242}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.SharedSource.Dataset.ServerControls", "Sitecore.SharedSource.ServerControls\Sitecore.SharedSource.Dataset.ServerControls.csproj", "{931C9364-7275-4F05-8C18-19F9535A5A0B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.SharedSource.Dataset.UI", "Website\sitecore modules\Shell\Datasets\Sitecore.SharedSource.Dataset.UI.csproj", "{B3D71A84-4623-43D6-B041-07A38161EBB2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Config", "Config", "{5AFD0A51-0040-4E7A-B7AA-7F7857CBBEC2}"
+	ProjectSection(SolutionItems) = preProject
+		Website\App_Config\Include\Datasets.config = Website\App_Config\Include\Datasets.config
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2888F82E-9950-48CB-A453-E32156C78327}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2888F82E-9950-48CB-A453-E32156C78327}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2888F82E-9950-48CB-A453-E32156C78327}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2888F82E-9950-48CB-A453-E32156C78327}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B8E634E-4499-4D1B-A7B3-BE8BAF762242}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B8E634E-4499-4D1B-A7B3-BE8BAF762242}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B8E634E-4499-4D1B-A7B3-BE8BAF762242}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B8E634E-4499-4D1B-A7B3-BE8BAF762242}.Release|Any CPU.Build.0 = Release|Any CPU
+		{931C9364-7275-4F05-8C18-19F9535A5A0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{931C9364-7275-4F05-8C18-19F9535A5A0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{931C9364-7275-4F05-8C18-19F9535A5A0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{931C9364-7275-4F05-8C18-19F9535A5A0B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3D71A84-4623-43D6-B041-07A38161EBB2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3D71A84-4623-43D6-B041-07A38161EBB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3D71A84-4623-43D6-B041-07A38161EBB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3D71A84-4623-43D6-B041-07A38161EBB2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

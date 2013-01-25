@@ -1,0 +1,475 @@
+<project>
+  <Metadata>
+    <metadata>
+      <PackageName>SharedSourceDatasets</PackageName>
+      <Author>Paul Martin</Author>
+      <Version>1.0</Version>
+      <Revision />
+      <License />
+      <Comment />
+      <Attributes />
+      <Readme />
+      <Publisher />
+      <PostStep />
+      <PackageID />
+    </metadata>
+  </Metadata>
+  <SaveProject>True</SaveProject>
+  <Sources>
+    <files>
+      <Root>/sitecore modules/Shell/Datasets</Root>
+      <Converter>
+        <FileToEntryConverter>
+          <Root>/</Root>
+          <Transforms>
+            <InstallerConfigurationTransform>
+              <Options>
+                <BehaviourOptions>
+                  <ItemMode>Undefined</ItemMode>
+                  <ItemMergeMode>Undefined</ItemMergeMode>
+                </BehaviourOptions>
+              </Options>
+            </InstallerConfigurationTransform>
+          </Transforms>
+        </FileToEntryConverter>
+      </Converter>
+      <Include>
+        <FileNameFilter>
+          <Pattern />
+          <AcceptDirectories>False</AcceptDirectories>
+        </FileNameFilter>
+        <FileDateFilter>
+          <FilterType>CreatedFilter</FilterType>
+          <ActionDateTo />
+          <ActionDateFrom />
+          <NotOlderThan />
+        </FileDateFilter>
+        <FileDateFilter>
+          <FilterType>ModifiedFilter</FilterType>
+          <ActionDateTo />
+          <ActionDateFrom />
+          <NotOlderThan />
+        </FileDateFilter>
+      </Include>
+      <Exclude />
+      <Name>Files</Name>
+    </files>
+    <xfiles>
+      <Entries>
+        <x-item>/bin/Irony.dll</x-item>
+        <x-item>/bin/Irony.pdb</x-item>
+        <x-item>/bin/Sitecore.SharedSource.Dataset.dll</x-item>
+        <x-item>/bin/Sitecore.SharedSource.Dataset.pdb</x-item>
+        <x-item>/bin/Sitecore.SharedSource.Dataset.ServerControls.dll</x-item>
+        <x-item>/bin/Sitecore.SharedSource.Dataset.ServerControls.pdb</x-item>
+        <x-item>/bin/Sitecore.SharedSource.Dataset.UI.dll</x-item>
+        <x-item>/bin/Sitecore.SharedSource.Dataset.UI.pdb</x-item>
+        <x-item>/bin/Sitecore.SharedSource.Text.dll</x-item>
+        <x-item>/bin/Sitecore.SharedSource.Text.pdb</x-item>
+      </Entries>
+      <Converter>
+        <FileToEntryConverter>
+          <Root>/</Root>
+          <Transforms />
+        </FileToEntryConverter>
+      </Converter>
+      <Include />
+      <Exclude />
+      <Name>DLLs</Name>
+    </xfiles>
+    <items>
+      <Database>master</Database>
+      <Root>{3A5E963D-00E9-4D24-A9D2-D36B1EFC1B23}</Root>
+      <SkipVersions>False</SkipVersions>
+      <Converter>
+        <ItemToEntryConverter>
+          <Transforms />
+        </ItemToEntryConverter>
+      </Converter>
+      <Include>
+        <ItemNameFilter>
+          <Pattern />
+          <FilterSearchType>Simple</FilterSearchType>
+        </ItemNameFilter>
+        <ItemDateFilter>
+          <FilterType>CreatedFilter</FilterType>
+          <NotOlderThan />
+          <ActionDateTo />
+          <ActionDateFrom />
+        </ItemDateFilter>
+        <ItemDateFilter>
+          <FilterType>ModifiedFilter</FilterType>
+          <NotOlderThan />
+          <ActionDateTo />
+          <ActionDateFrom />
+        </ItemDateFilter>
+        <ItemPublishFilter>
+          <PublishDate />
+          <CheckWorkflow>True</CheckWorkflow>
+        </ItemPublishFilter>
+        <ItemTemplateFilter>
+          <Templates />
+        </ItemTemplateFilter>
+        <ItemUserFilter>
+          <FilterType>Created</FilterType>
+          <Accounts />
+        </ItemUserFilter>
+        <ItemUserFilter>
+          <FilterType>Modified</FilterType>
+          <Accounts />
+        </ItemUserFilter>
+        <ItemLanguageFilter>
+          <Languages />
+        </ItemLanguageFilter>
+      </Include>
+      <Exclude />
+      <Name>Templates (master)</Name>
+    </items>
+    <items>
+      <Database>web</Database>
+      <Root>{3A5E963D-00E9-4D24-A9D2-D36B1EFC1B23}</Root>
+      <SkipVersions>False</SkipVersions>
+      <Converter>
+        <ItemToEntryConverter>
+          <Transforms>
+            <InstallerConfigurationTransform>
+              <Options>
+                <BehaviourOptions>
+                  <ItemMode>Undefined</ItemMode>
+                  <ItemMergeMode>Undefined</ItemMergeMode>
+                </BehaviourOptions>
+              </Options>
+            </InstallerConfigurationTransform>
+          </Transforms>
+        </ItemToEntryConverter>
+      </Converter>
+      <Include>
+        <ItemNameFilter>
+          <Pattern />
+          <FilterSearchType>Simple</FilterSearchType>
+        </ItemNameFilter>
+        <ItemDateFilter>
+          <FilterType>CreatedFilter</FilterType>
+          <NotOlderThan />
+          <ActionDateTo />
+          <ActionDateFrom />
+        </ItemDateFilter>
+        <ItemDateFilter>
+          <FilterType>ModifiedFilter</FilterType>
+          <NotOlderThan />
+          <ActionDateTo />
+          <ActionDateFrom />
+        </ItemDateFilter>
+        <ItemPublishFilter>
+          <PublishDate />
+          <CheckWorkflow>True</CheckWorkflow>
+        </ItemPublishFilter>
+        <ItemTemplateFilter>
+          <Templates />
+        </ItemTemplateFilter>
+        <ItemUserFilter>
+          <FilterType>Created</FilterType>
+          <Accounts />
+        </ItemUserFilter>
+        <ItemUserFilter>
+          <FilterType>Modified</FilterType>
+          <Accounts />
+        </ItemUserFilter>
+        <ItemLanguageFilter>
+          <Languages />
+        </ItemLanguageFilter>
+      </Include>
+      <Exclude />
+      <Name>Templates (web)</Name>
+    </items>
+    <items>
+      <Database>master</Database>
+      <Root>{0C2A7A95-2CF7-47F1-97E2-A30CFB7ECA4A}</Root>
+      <SkipVersions>False</SkipVersions>
+      <Converter>
+        <ItemToEntryConverter>
+          <Transforms>
+            <InstallerConfigurationTransform>
+              <Options>
+                <BehaviourOptions>
+                  <ItemMode>Undefined</ItemMode>
+                  <ItemMergeMode>Undefined</ItemMergeMode>
+                </BehaviourOptions>
+              </Options>
+            </InstallerConfigurationTransform>
+          </Transforms>
+        </ItemToEntryConverter>
+      </Converter>
+      <Include>
+        <ItemNameFilter>
+          <Pattern />
+          <FilterSearchType>Simple</FilterSearchType>
+        </ItemNameFilter>
+        <ItemDateFilter>
+          <FilterType>CreatedFilter</FilterType>
+          <NotOlderThan />
+          <ActionDateTo />
+          <ActionDateFrom />
+        </ItemDateFilter>
+        <ItemDateFilter>
+          <FilterType>ModifiedFilter</FilterType>
+          <NotOlderThan />
+          <ActionDateTo />
+          <ActionDateFrom />
+        </ItemDateFilter>
+        <ItemPublishFilter>
+          <PublishDate />
+          <CheckWorkflow>True</CheckWorkflow>
+        </ItemPublishFilter>
+        <ItemTemplateFilter>
+          <Templates />
+        </ItemTemplateFilter>
+        <ItemUserFilter>
+          <FilterType>Created</FilterType>
+          <Accounts />
+        </ItemUserFilter>
+        <ItemUserFilter>
+          <FilterType>Modified</FilterType>
+          <Accounts />
+        </ItemUserFilter>
+        <ItemLanguageFilter>
+          <Languages />
+        </ItemLanguageFilter>
+      </Include>
+      <Exclude />
+      <Name>Settings (master)</Name>
+    </items>
+    <items>
+      <Database>web</Database>
+      <Root>{0C2A7A95-2CF7-47F1-97E2-A30CFB7ECA4A}</Root>
+      <SkipVersions>False</SkipVersions>
+      <Converter>
+        <ItemToEntryConverter>
+          <Transforms />
+        </ItemToEntryConverter>
+      </Converter>
+      <Include>
+        <ItemNameFilter>
+          <Pattern />
+          <FilterSearchType>Simple</FilterSearchType>
+        </ItemNameFilter>
+        <ItemDateFilter>
+          <FilterType>CreatedFilter</FilterType>
+          <NotOlderThan />
+          <ActionDateTo />
+          <ActionDateFrom />
+        </ItemDateFilter>
+        <ItemDateFilter>
+          <FilterType>ModifiedFilter</FilterType>
+          <NotOlderThan />
+          <ActionDateTo />
+          <ActionDateFrom />
+        </ItemDateFilter>
+        <ItemPublishFilter>
+          <PublishDate />
+          <CheckWorkflow>True</CheckWorkflow>
+        </ItemPublishFilter>
+        <ItemTemplateFilter>
+          <Templates />
+        </ItemTemplateFilter>
+        <ItemUserFilter>
+          <FilterType>Created</FilterType>
+          <Accounts />
+        </ItemUserFilter>
+        <ItemUserFilter>
+          <FilterType>Modified</FilterType>
+          <Accounts />
+        </ItemUserFilter>
+        <ItemLanguageFilter>
+          <Languages />
+        </ItemLanguageFilter>
+      </Include>
+      <Exclude />
+      <Name>Settings (web)</Name>
+    </items>
+    <items>
+      <Database>core</Database>
+      <Root>{A13111A8-03A4-47DA-802E-ECC7EF7C29F8}</Root>
+      <SkipVersions>False</SkipVersions>
+      <Converter>
+        <ItemToEntryConverter>
+          <Transforms />
+        </ItemToEntryConverter>
+      </Converter>
+      <Include>
+        <ItemNameFilter>
+          <Pattern />
+          <FilterSearchType>Simple</FilterSearchType>
+        </ItemNameFilter>
+        <ItemDateFilter>
+          <FilterType>CreatedFilter</FilterType>
+          <NotOlderThan />
+          <ActionDateTo />
+          <ActionDateFrom />
+        </ItemDateFilter>
+        <ItemDateFilter>
+          <FilterType>ModifiedFilter</FilterType>
+          <NotOlderThan />
+          <ActionDateTo />
+          <ActionDateFrom />
+        </ItemDateFilter>
+        <ItemPublishFilter>
+          <PublishDate />
+          <CheckWorkflow>True</CheckWorkflow>
+        </ItemPublishFilter>
+        <ItemTemplateFilter>
+          <Templates />
+        </ItemTemplateFilter>
+        <ItemUserFilter>
+          <FilterType>Created</FilterType>
+          <Accounts />
+        </ItemUserFilter>
+        <ItemUserFilter>
+          <FilterType>Modified</FilterType>
+          <Accounts />
+        </ItemUserFilter>
+        <ItemLanguageFilter>
+          <Languages />
+        </ItemLanguageFilter>
+      </Include>
+      <Exclude />
+      <Name>Field Types</Name>
+    </items>
+    <items>
+      <Database>core</Database>
+      <Root>{09142294-E477-4152-9E85-AE5F292648A0}</Root>
+      <SkipVersions>False</SkipVersions>
+      <Converter>
+        <ItemToEntryConverter>
+          <Transforms>
+            <InstallerConfigurationTransform>
+              <Options>
+                <BehaviourOptions>
+                  <ItemMode>Undefined</ItemMode>
+                  <ItemMergeMode>Undefined</ItemMergeMode>
+                </BehaviourOptions>
+              </Options>
+            </InstallerConfigurationTransform>
+          </Transforms>
+        </ItemToEntryConverter>
+      </Converter>
+      <Include>
+        <ItemNameFilter>
+          <Pattern>Dataset</Pattern>
+          <FilterSearchType>Simple</FilterSearchType>
+        </ItemNameFilter>
+        <ItemDateFilter>
+          <FilterType>CreatedFilter</FilterType>
+          <NotOlderThan />
+          <ActionDateTo />
+          <ActionDateFrom />
+        </ItemDateFilter>
+        <ItemDateFilter>
+          <FilterType>ModifiedFilter</FilterType>
+          <NotOlderThan />
+          <ActionDateTo />
+          <ActionDateFrom />
+        </ItemDateFilter>
+        <ItemPublishFilter>
+          <PublishDate />
+          <CheckWorkflow>True</CheckWorkflow>
+        </ItemPublishFilter>
+        <ItemTemplateFilter>
+          <Templates />
+        </ItemTemplateFilter>
+        <ItemUserFilter>
+          <FilterType>Created</FilterType>
+          <Accounts />
+        </ItemUserFilter>
+        <ItemUserFilter>
+          <FilterType>Modified</FilterType>
+          <Accounts />
+        </ItemUserFilter>
+        <ItemLanguageFilter>
+          <Languages />
+        </ItemLanguageFilter>
+      </Include>
+      <Exclude />
+      <Name>DatasetRenderer Editors</Name>
+    </items>
+    <xfiles>
+      <Entries>
+        <x-item>/App_Config/Include/Datasets.config</x-item>
+      </Entries>
+      <Converter>
+        <FileToEntryConverter>
+          <Root>/</Root>
+          <Transforms />
+        </FileToEntryConverter>
+      </Converter>
+      <Include />
+      <Exclude />
+      <Name>Config</Name>
+    </xfiles>
+    <items>
+      <Database>master</Database>
+      <Root>{32566F0E-7686-45F1-A12F-D7260BD78BC3}</Root>
+      <SkipVersions>False</SkipVersions>
+      <Converter>
+        <ItemToEntryConverter>
+          <Transforms>
+            <InstallerConfigurationTransform>
+              <Options>
+                <BehaviourOptions>
+                  <ItemMode>Undefined</ItemMode>
+                  <ItemMergeMode>Undefined</ItemMergeMode>
+                </BehaviourOptions>
+              </Options>
+            </InstallerConfigurationTransform>
+          </Transforms>
+        </ItemToEntryConverter>
+      </Converter>
+      <Include>
+        <ItemNameFilter>
+          <Pattern>DatasetRenderer</Pattern>
+          <FilterSearchType>Simple</FilterSearchType>
+        </ItemNameFilter>
+        <ItemDateFilter>
+          <FilterType>CreatedFilter</FilterType>
+          <NotOlderThan />
+          <ActionDateTo />
+          <ActionDateFrom />
+        </ItemDateFilter>
+        <ItemDateFilter>
+          <FilterType>ModifiedFilter</FilterType>
+          <NotOlderThan />
+          <ActionDateTo />
+          <ActionDateFrom />
+        </ItemDateFilter>
+        <ItemPublishFilter>
+          <PublishDate />
+          <CheckWorkflow>True</CheckWorkflow>
+        </ItemPublishFilter>
+        <ItemTemplateFilter>
+          <Templates />
+        </ItemTemplateFilter>
+        <ItemUserFilter>
+          <FilterType>Created</FilterType>
+          <Accounts />
+        </ItemUserFilter>
+        <ItemUserFilter>
+          <FilterType>Modified</FilterType>
+          <Accounts />
+        </ItemUserFilter>
+        <ItemLanguageFilter>
+          <Languages />
+        </ItemLanguageFilter>
+      </Include>
+      <Exclude />
+      <Name>Layouts</Name>
+    </items>
+  </Sources>
+  <Converter>
+    <TrivialConverter>
+      <Transforms />
+    </TrivialConverter>
+  </Converter>
+  <Include />
+  <Exclude />
+  <Name />
+</project>
