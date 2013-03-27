@@ -87,14 +87,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Sharepoint\SharepointField.cs" />
     <Compile Include="Sharepoint\SharepointService.cs" />
-    <Compile Include="Utility\ConvertUtil.cs" />
-    <Compile Include="Utility\FieldIDs.cs" />
-    <Compile Include="Utility\KeyLockManager.cs" />
-    <Compile Include="Utility\RegexUtil.cs" />
-    <Compile Include="Utility\WebServiceUtil.cs" />
-    <Compile Include="Utility\WildcardUtil.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Sitecore.SharedSource.Dataset.Utility\Sitecore.SharedSource.Dataset.Utility.csproj">
+      <Project>{2633FF20-7DF2-4CAF-B17B-E0606A70B1B6}</Project>
+      <Name>Sitecore.SharedSource.Dataset.Utility</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Sitecore.SharedSource.Text\Sitecore.SharedSource.Text.csproj">
       <Project>{0B8E634E-4499-4D1B-A7B3-BE8BAF762242}</Project>
       <Name>Sitecore.SharedSource.Text</Name>

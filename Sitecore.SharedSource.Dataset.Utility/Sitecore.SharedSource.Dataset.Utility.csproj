@@ -5,11 +5,11 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{0B8E634E-4499-4D1B-A7B3-BE8BAF762242}</ProjectGuid>
+    <ProjectGuid>{2633FF20-7DF2-4CAF-B17B-E0606A70B1B6}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Sitecore.SharedSource.Text</RootNamespace>
-    <AssemblyName>Sitecore.SharedSource.Text</AssemblyName>
+    <RootNamespace>Sitecore.SharedSource.Dataset.Utility</RootNamespace>
+    <AssemblyName>Sitecore.SharedSource.Dataset.Utility</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
@@ -32,44 +32,27 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Irony">
-      <HintPath>..\3rdParty\Irony.dll</HintPath>
-    </Reference>
     <Reference Include="Sitecore.Kernel">
       <HintPath>..\3rdParty\Sitecore.Kernel.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Sitecore.Logging">
-      <HintPath>..\3rdParty\Sitecore.Logging.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FunctionInterpreter.cs" />
-    <Compile Include="interface\ITextFunctionHandler.cs" />
-    <Compile Include="Irony\CLSIDFromString.cs" />
-    <Compile Include="Irony\FunctionGrammer.cs" />
-    <Compile Include="Pipelines\IPipelineProcessor.cs" />
-    <Compile Include="Pipelines\ProcessTextFunction\base\BaseFunctionProcessor.cs" />
-    <Compile Include="Pipelines\ProcessTextFunction\CustomFunctionProcessor.cs" />
-    <Compile Include="Pipelines\ProcessTextFunction\WebContextFunctionProcessor.cs" />
-    <Compile Include="Pipelines\ProcessTextFunction\SitecoreFunctionProcessor.cs" />
-    <Compile Include="Pipelines\ProcessTextFunction\CoreFunctionProcessor.cs" />
-    <Compile Include="Pipelines\ProcessTextFunction\TextFunctionPipelineArgs.cs" />
+    <Compile Include="ConvertUtil.cs" />
+    <Compile Include="FieldIDs.cs" />
+    <Compile Include="KeyLockManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Sitecore.SharedSource.Dataset.Utility\Sitecore.SharedSource.Dataset.Utility.csproj">
-      <Project>{2633FF20-7DF2-4CAF-B17B-E0606A70B1B6}</Project>
-      <Name>Sitecore.SharedSource.Dataset.Utility</Name>
-    </ProjectReference>
+    <Compile Include="RegexUtil.cs" />
+    <Compile Include="WebServiceUtil.cs" />
+    <Compile Include="WildcardUtil.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

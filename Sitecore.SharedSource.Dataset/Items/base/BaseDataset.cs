@@ -23,6 +23,7 @@ namespace Sitecore.SharedSource.Dataset.Items
 {
     public abstract class BaseDataset : CustomItem, IDatasetItem
     {
+        private static Sitecore.SharedSource.Dataset.KeyLockManager _lockMgr = new Sitecore.SharedSource.Dataset.KeyLockManager();
         protected static Regex _rgxKeyMaker = new Regex(@"[^A-Za-z0-9\-\._\s\@]", RegexOptions.Compiled | RegexOptions.Singleline);
         protected Dictionary<string, string> _fieldMap = null;
         private DataTable _data = null;
@@ -147,14 +148,33 @@ namespace Sitecore.SharedSource.Dataset.Items
             }
         }
 
+        private static Dictionary<string, DatasetCache> _cacheInstances = new Dictionary<string, DatasetCache>();
         protected static DatasetCache DsCache
         {
             get
             {
-                return new DatasetCache(Sitecore.Context.Site.SiteInfo,
-                        StringUtil.ParseSizeString(Settings.GetSetting("Caching.DefaultDatasetCacheSize", "5MB")));
+                string key = Context.Site.SiteInfo.Name;
+
+                if (!_cacheInstances.ContainsKey(key))
+                {
+                    lock (_lockMgr.AcquireKeyLock(key))
+                    {
+                        if (!_cacheInstances.ContainsKey(key))
+                            _cacheInstances[key] = new DatasetCache(Context.Site.SiteInfo, StringUtil.ParseSizeString(Settings.GetSetting("Caching.DefaultDatasetCacheSize", "5MB")));
+                    }
+                }
+                return _cacheInstances[key];
             }
         }
+
+        //protected static DatasetCache DsCache
+        //{
+        //    get
+        //    {
+        //        return new DatasetCache(Sitecore.Context.Site.SiteInfo,
+        //                StringUtil.ParseSizeString(Settings.GetSetting("Caching.DefaultDatasetCacheSize", "5MB")));
+        //    }
+        //}
 
         public Dictionary<string, string> FieldMap
         {

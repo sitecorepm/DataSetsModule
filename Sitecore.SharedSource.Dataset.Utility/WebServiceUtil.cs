@@ -15,17 +15,17 @@ namespace Sitecore.SharedSource.Dataset
     /// <summary>
     /// Credit: http://social.msdn.microsoft.com/forums/en-US/csharpgeneral/thread/39138d08-aa08-4c0c-9a58-0eb81a672f54
     /// </summary>
-    internal class WebServiceUtil
+    public class WebServiceUtil
     {
         private static object _syncRoot = new object();
         private static Dictionary<string, object> _serviceAssemblies = new Dictionary<string, object>();
 
-        internal static object GetWebServiceClientProxyClass(string webServiceAsmxUrl, string serviceClassName)
+        public static object GetWebServiceClientProxyClass(string webServiceAsmxUrl, string serviceClassName)
         { 
             return GetWebServiceClientProxyClass(webServiceAsmxUrl, serviceClassName, null);
         }
 
-        internal static object GetWebServiceClientProxyClass(string webServiceAsmxUrl, string serviceClassName, ICredentials credentials)
+        public static object GetWebServiceClientProxyClass(string webServiceAsmxUrl, string serviceClassName, ICredentials credentials)
         {
             Assembly assembly = null; 
             object proxyClass = null;

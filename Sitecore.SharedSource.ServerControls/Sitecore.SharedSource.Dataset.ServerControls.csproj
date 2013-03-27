@@ -65,6 +65,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Sitecore.SharedSource.Dataset.Utility\Sitecore.SharedSource.Dataset.Utility.csproj">
+      <Project>{2633FF20-7DF2-4CAF-B17B-E0606A70B1B6}</Project>
+      <Name>Sitecore.SharedSource.Dataset.Utility</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Sitecore.SharedSource.Dataset\Sitecore.SharedSource.Dataset.csproj">
       <Project>{2888F82E-9950-48CB-A453-E32156C78327}</Project>
       <Name>Sitecore.SharedSource.Dataset</Name>
